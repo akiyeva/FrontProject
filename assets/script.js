@@ -58,6 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
           "modalGenres"
         ).textContent = `Genres: ${movie.genres.join(", ")}`;
         movieModal.show();
+        document.getElementById("modalDuration").textContent = movie.duration;
+        document.getElementById("modalRating").textContent = movie.rating;
+        document.getElementById("modalReleaseDate").textContent = movie.releaseDate;
+
+
       }
     }
   });
